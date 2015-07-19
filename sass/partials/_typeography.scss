@@ -1,0 +1,80 @@
+@import "variables";
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+/* Universalis */
+
+$font: 'Open Sans', sans-serif;
+$base: 16px;
+$lh: 1.5; //lineheight multiplier
+$mbot: 0.4; //margin bottom multiplier
+
+html, body {
+    font-family: $font;
+    font-size: $base; //16
+    line-height: ($base) * $lh;
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+
+h1 {
+    $h1: $base * 2.5;
+    
+    font-family: $font;
+    font-weight: 300;
+    font-size: $h1; //40
+    line-height: $h1 * $lh;
+    margin-top: $h1 * $lh;
+    margin-bottom: $h1 * $mbot;
+}
+
+
+h2 {
+    $h2: $base * 2;
+    
+    font-family: $font;
+    font-weight: 300;
+    font-size: $h2; //32
+    line-height: $h2 * $lh;
+    margin-top: $h2 * $lh;
+    margin-bottom: $h2 * $mbot;    
+}
+
+
+
+h3 {
+    $h3: $base * 1.5;
+    
+    font-family: $font;
+    font-size: $h3; //24
+    line-height: $h3 * $lh;
+    margin-top: $h3 * $lh;
+    margin-bottom: $h3 * $mbot;
+    font-weight: normal;
+}
+
+
+
+h4 {
+    $h4: $base * 1;
+    
+    font-family: $font;
+    font-size: $h4; //16
+    line-height: $h4 * $lh; 
+    margin-top: $h4 * $lh;
+    margin-bottom: $h4 * $mbot;
+    font-weight: bold;
+}
+
+
+//////////////////////////////////////////////////////////////
+
+
+p, span {
+    font-size: $base;
+    line-height: $base * $lh;
+    margin: ($base * 1) 0;
+    margin-bottom: $base * $mbot;
+}

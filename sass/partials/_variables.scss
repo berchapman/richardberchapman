@@ -1,0 +1,65 @@
+//Imports
+@import "breakpoint";
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+
+
+//UNIVERSALIS
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+//COLORS
+$orange: #FFB02C;
+$lightblue: #42B6FF;
+$pink: #F963C3; //#FF82EF;
+$light: #FCFCFC;
+$dark: #161616;
+
+//COLORED ELEMENTS
+$banner: $orange;
+$quicklinks: $lightblue;
+$skills: white;
+  $design: $light;
+  $development: $dark;
+  $combined: rgba(255,255,255,0.75);
+$websites: $pink;
+$footer: $orange;
+
+
+
+////////////////////////////////////////////
+//BREAKPOINTS
+////////////////////////////////////////////
+
+$watch: 0px 260px;
+$mobile: 261px 400px;
+    $mini: 261px 310px;
+$phablet: 401px 600px;
+$tablet: 601px 800px;
+
+
+$below_800: 0px 800px;
+$below_600: 0px 600px;
+$below_450: 0px 450px;
+$below_350: 0px 350px;
+$below_220: 0px 220px;
+
+////////////////////////////////////////////
+//SPACING & SIZING
+////////////////////////////////////////////
+
+$vertical: 50px;
+
+@mixin ingrid(){
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+$bannerHeight: 390px;
